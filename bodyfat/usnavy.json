@@ -4,6 +4,7 @@
    "short":"US Navy",
    "formulas":[
       {
+         "id": "m",
          "equation":"495 1.0324 0.19077 a b - log_10 * - 0.15456 c log_10 * + / 450 -",
          "fields":[
             {
@@ -30,6 +31,7 @@
          }
       },
       {
+         "id": "f",
          "equation":"495 1.29579 0.35004 a c + b - log_10 * - 0.22100 d log_10 * + / 450 -",
          "fields":[
             {
