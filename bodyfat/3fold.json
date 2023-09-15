@@ -1,0 +1,73 @@
+{
+    "id": "bodyfat_3fold",
+    "title": "3-Site Skinfold (Jackson & Pollock)",
+    "short": "3-Site Skinfold",
+    "formulas": [
+        {
+            "id": "m",
+            "equation": "4.95 1.10938 0.0008267 a b c + + * - 0.0000016 a b c + + 2 ^ * + 0.0002574 d * - / 4.5 - 100 *",
+            "fields": [
+                {
+                    "alias": "a",
+                    "name": "chest",
+                    "label": "Chest",
+                    "description": "Diagonal fold half the distance between anterior axillary line and the nipple."
+                },
+                {
+                    "alias": "b",
+                    "name": "abdomen",
+                    "label": "Abdomen",
+                    "description": "Vertical fold 2cm to the right of the navel."
+                },
+                {
+                    "alias": "c",
+                    "name": "thigh",
+                    "label": "Thigh",
+                    "description": "Midpoint of the anterior side of the upper leg between the patella and top of thigh."
+                }
+            ],
+            "constantData": [
+                {
+                    "alias": "d",
+                    "identifier": "age"
+                }
+            ],
+            "conditions": {
+                "gender": "m"
+            }
+        },
+        {
+            "id": "f",
+            "equation": "4.95 1.0994921 0.0009929 a b c + + * - 0.0000023 a b c + + 2 ^ * + 0.0001392 d * - / 4.5 - 100 *",
+            "fields": [
+                {
+                    "alias": "a",
+                    "name": "tricep",
+                    "label": "Tricep",
+                    "description": "Vertical fold at the midpoint of the posterior side of tricep between shoulder and elbow with arm relaxed at the side."
+                },
+                {
+                    "alias": "b",
+                    "name": "suprailiac",
+                    "label": "Suprailiac",
+                    "description": "Diagonal fold parallel and superior to the iliac crest."
+                },
+                {
+                    "alias": "c",
+                    "name": "thigh",
+                    "label": "Thigh",
+                    "description": "Midpoint of the anterior side of the upper leg between the patella and top of thigh."
+                }
+            ],
+            "constantData": [
+                {
+                    "alias": "d",
+                    "identifier": "age"
+                }
+            ],
+            "conditions": {
+                "gender": "f"
+            }
+        }
+    ]
+}
