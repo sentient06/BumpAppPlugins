@@ -1,0 +1,121 @@
+{
+    "id": "bodyfat_7fold",
+    "title": "7-Site Skinfold (Jackson & Pollock)",
+    "short": "7-Site Skinfold",
+    "formulas": [
+        {
+            "id": "m",
+            "equation": "495 1.112 a b c d e f g + + + + + + 0.00043499 * - a b c d e f g + + + + + + 2 ^ 0.00000055 * + 0.00028826 h * - / 450 -",
+            "fields": [
+                {
+                    "alias": "a",
+                    "name": "chest",
+                    "label": "Chest",
+                    "description": "Diagonal fold, one half the distance for men and one third of distance for females, between anterior axillary line and nipple."
+                },
+                {
+                    "alias": "b",
+                    "name": "abdomen",
+                    "label": "Abdomen",
+                    "description": "Vertical fold, 2 cm to the right side of umbilicus."
+                },
+                {
+                    "alias": "c",
+                    "name": "thigh",
+                    "label": "Thigh",
+                    "description": "Vertical fold on the anterior midline of the thigh, half way between the proximal border of the patella and the hip."
+                },
+                {
+                    "alias": "d",
+                    "name": "triceps",
+                    "label": "Triceps",
+                    "description": "Vertical fold on the posterior midline of the upper arm, halfway between the bony processes (shoulder and elbow). The arm should be held freely to the side of the body."
+                },
+                {
+                    "alias": "e",
+                    "name": "axilla",
+                    "label": "Axilla",
+                    "description": "Vertical fold on the midaxillary line at the level of the xiphoid process of the sternum."
+                },
+                {
+                    "alias": "f",
+                    "name": "subscapula",
+                    "label": "Subscapula",
+                    "description": "Diagonal 45 degrees fold, 1-2 cm below the angle of the scapula."
+                },
+                {
+                    "alias": "g",
+                    "name": "suprailiac",
+                    "label": "Suprailiac",
+                    "description": "Diagonal fold, immediately superior and in line with the angle of the iliac crest, on the anterior axillary line."
+                }
+            ],
+            "constantData": [
+                {
+                    "alias": "h",
+                    "identifier": "age"
+                }
+            ],
+            "conditions": {
+                "gender": "m"
+            }
+        },
+        {
+            "id": "f",
+            "equation": "495 1.097 a b c d e f g + + + + + + 0.00046971 * - a b c d e f g + + + + + + 2 ^ 0.00000056 * + 0.00012828 h * - / 450 -",
+            "fields": [
+                {
+                    "alias": "a",
+                    "name": "chest",
+                    "label": "Chest",
+                    "description": "Diagonal fold, one half the distance for men and one third of distance for females, between anterior axillary line and nipple."
+                },
+                {
+                    "alias": "b",
+                    "name": "abdomen",
+                    "label": "Abdomen",
+                    "description": "Vertical fold, 2 cm to the right side of umbilicus."
+                },
+                {
+                    "alias": "c",
+                    "name": "thigh",
+                    "label": "Thigh",
+                    "description": "Vertical fold on the anterior midline of the thigh, half way between the proximal border of the patella and the hip."
+                },
+                {
+                    "alias": "d",
+                    "name": "triceps",
+                    "label": "Triceps",
+                    "description": "Vertical fold on the posterior midline of the upper arm, halfway between the bony processes (shoulder and elbow). The arm should be held freely to the side of the body."
+                },
+                {
+                    "alias": "e",
+                    "name": "axilla",
+                    "label": "Axilla",
+                    "description": "Vertical fold on the midaxillary line at the level of the xiphoid process of the sternum."
+                },
+                {
+                    "alias": "f",
+                    "name": "subscapula",
+                    "label": "Subscapula",
+                    "description": "Diagonal 45 degrees fold, 1-2 cm below the angle of the scapula."
+                },
+                {
+                    "alias": "g",
+                    "name": "suprailiac",
+                    "label": "Suprailiac",
+                    "description": "Diagonal fold, immediately superior and in line with the angle of the iliac crest, on the anterior axillary line."
+                }
+            ],
+            "constantData": [
+                {
+                    "alias": "h",
+                    "identifier": "age"
+                }
+            ],
+            "conditions": {
+                "gender": "f"
+            }
+        }
+    ]
+}
